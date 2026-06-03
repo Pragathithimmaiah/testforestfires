@@ -107,7 +107,7 @@
       <button type="submit" class="predict-btn">Predict Fire Weather Index</button>
     </form>
 
-    {% if result is not none %}
+    {% if result %}
     <div class="result-card">
       <p class="result-label">Predicted Fire Weather Index (FWI)</p>
       <p class="result-value">{{ "%.2f"|format(result) }}</p>
